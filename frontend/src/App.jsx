@@ -455,38 +455,47 @@ function App() {
           <div className="profile-section">
             <div className="profile-image">IS</div>
             <h2>Inderjit Singh</h2>
-            <p className="subtitle">Football Enthusiast & Developer</p>
+            <p className="subtitle">Full-Stack Developer & Football Fanatic</p>
           </div>
 
           <div className="about-text">
             <p>
-              <strong>Welcome to my Football Hub!</strong> I'm Inderjit, a passionate football fanatic who lives and breathes the beautiful game.
-            </p>
-          </div>
-
-          <div className="about-text">
-            <p>
-              Football isn't just a sport for me—it's a way of life. From the tactical nuances of formations to the electric atmosphere of match day, I'm captivated by every aspect of the game.
+              <strong>Where Two Passions Collide.</strong> This project is the intersection of my two greatest interests: the beautiful game of football and the art of software development.
             </p>
           </div>
 
           <div className="mission-statement">
-            <h3>My Vision</h3>
+            <h3>🎯 The Project</h3>
             <p>
-              This platform represents my ambition to bridge technology and football. I'm building a comprehensive hub where fans can explore teams, track players, follow matches, and dive deep into the statistics that make football fascinating.
+              Built as a full-stack application combining React, Node.js, and Express, this platform showcases global football data across 12 major leagues—from the Premier League to MLS, Saudi Pro League to Serie A.
             </p>
           </div>
 
-          <div className="about-text" style={{ marginTop: '24px' }}>
+          <div className="about-text">
             <p>
-              Whether you're analyzing league standings, discovering new players, or keeping up with fixtures, this is your one-stop destination for everything football. Built with passion, powered by data, designed for fans.
+              <strong>🧪 Testing Innovation</strong><br />
+              The real magic? I'm using <strong>Playwright MCP</strong> (Model Context Protocol) to build intelligent, automated testing. This cutting-edge approach allows me to create comprehensive test suites that ensure every feature works flawlessly.
+            </p>
+          </div>
+
+          <div className="about-text">
+            <p>
+              <strong>💡 Why This Matters</strong><br />
+              Football generates massive amounts of data—teams, players, matches, standings. Managing and presenting this information requires robust engineering. This project demonstrates modern web development practices while celebrating the sport I love.
+            </p>
+          </div>
+
+          <div className="about-text">
+            <p>
+              From glassmorphism UI design to intelligent filtering systems, from RESTful APIs to responsive layouts—every line of code represents the marriage of technical excellence and football passion.
             </p>
           </div>
 
           <div className="about-text" style={{ marginTop: '24px', paddingTop: '24px', borderTop: '1px solid #d2d2d7' }}>
             <p style={{ fontSize: '13px', color: '#86868b' }}>
               © 2026 Inderjit Singh<br />
-              Built with React & Node.js
+              React • Node.js • Express • Playwright MCP<br />
+              <span style={{ fontSize: '11px' }}>Built with ⚽ and ☕</span>
             </p>
           </div>
         </div>
@@ -494,11 +503,28 @@ function App() {
 
       {/* Main Content */}
       <main className="main-content" ref={contentRef}>
+        <div className="floating-orbs">
+          <div className="orb orb-1"></div>
+          <div className="orb orb-2"></div>
+          <div className="orb orb-3"></div>
+          <div className="orb orb-4"></div>
+          <div className="orb orb-5"></div>
+        </div>
         <div className={`header ${scrolled ? 'scrolled' : ''}`}>
           <div className="header-background"></div>
           <div className="header-content">
-            <h1 className="gradient-text">Football Hub</h1>
-            <p>Your complete source for football teams, players, and matches</p>
+            <div className="header-badge">⚽ LIVE DATA</div>
+            <h1 className="gradient-text">
+              <span className="header-emoji">⚽</span>
+              WORLDWIDE<br />FOOTBALL UNIVERSE
+            </h1>
+            <p className="header-subtitle">
+              <span className="subtitle-item">🌍 12 Global Leagues</span>
+              <span className="subtitle-separator">•</span>
+              <span className="subtitle-item">📊 Real-Time Stats</span>
+              <span className="subtitle-separator">•</span>
+              <span className="subtitle-item">⚡ Lightning Fast</span>
+            </p>
           </div>
         </div>
 
