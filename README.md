@@ -1,6 +1,30 @@
-# Football Hub Website
+# Football Hub ⚽
 
-A complete football website with React frontend and Node.js/Express backend for Playwright testing.
+> A modern, Apple-inspired football website showcasing teams, players, matches, and standings from **12 major leagues worldwide**. Built with React + Node.js and fully tested with Playwright automation.
+
+**Perfect for learning:** Full-stack web development, E2E testing, MCP integration, and modern UI design patterns.
+
+## 🌍 Global League Coverage
+
+- **Premier League** (England)
+- **La Liga** (Spain)  
+- **Serie A** (Italy)
+- **Bundesliga** (Germany)
+- **Ligue 1** (France)
+- **Eredivisie** (Netherlands)
+- **Primeira Liga** (Portugal)
+- **Brasileirão** (Brazil)
+- **Liga MX** (Mexico)
+- **Primera División** (Argentina)
+- **Saudi Pro League** (Saudi Arabia) - feat. Cristiano Ronaldo
+- **MLS** (United States) - feat. Lionel Messi
+
+## 📊 Data Coverage
+
+- **34 Teams** from 12 leagues worldwide
+- **28 World-Class Players** including Messi, Ronaldo, Mbappé, Haaland
+- **20 Live Matches** across all major leagues
+- **30+ League Standing Entries** with real-time positions
 
 ## Project Structure
 
