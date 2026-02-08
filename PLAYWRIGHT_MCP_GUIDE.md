@@ -785,4 +785,5 @@ npx playwright test --help            # Show all options
 
 ---
 
-**You now have a complete Playwright testing setup with MCP integration! Happy testing! 🎉**
+**You now have a complete Playwright testing setup with MCP integration! Happy testing! 🎉** 
+**Inderjit Singh**
