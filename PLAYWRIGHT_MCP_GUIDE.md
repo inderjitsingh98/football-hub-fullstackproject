@@ -320,11 +320,13 @@ If you have MCP with Playwright access:
 **Generate a Test:**
 ```
 "Generate a Playwright test that:
-1. Navigates to http://localhost:5173
+1. Navigates to http://localhost:5174
 2. Clicks the Players tab
 3. Verifies at least 5 player cards are displayed
 4. Checks that each player has goals, assists, and appearances stats"
 ```
+
+**✅ Example Generated:** See `tests/players-mcp-example.spec.js` for a complete working example!
 
 **Generate Tests for Specific Feature:**
 ```
