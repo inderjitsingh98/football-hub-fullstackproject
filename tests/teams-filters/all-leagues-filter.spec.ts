@@ -11,31 +11,31 @@ test.describe('League Filter Functionality', () => {
 
     // 2. Iterate through each of the 12 leagues
     const leagues = [
-      'Brasileirão',
-      'Bundesliga',
-      'Eredivisie',
-      'La Liga',
-      'Liga MX',
-      'Ligue 1',
-      'MLS',
-      'Premier League',
-      'Primeira Liga',
-      'Primera División',
-      'Saudi Pro League',
-      'Serie A'
+      { name: 'Brasileirão', teams: 2 },
+      { name: 'Bundesliga', teams: 3 },
+      { name: 'Eredivisie', teams: 2 },
+      { name: 'La Liga', teams: 3 },
+      { name: 'Liga MX', teams: 2 },
+      { name: 'Ligue 1', teams: 3 },
+      { name: 'MLS', teams: 4 },
+      { name: 'Premier League', teams: 5 },
+      { name: 'Primeira Liga', teams: 2 },
+      { name: 'Primera División', teams: 2 },
+      { name: 'Saudi Pro League', teams: 3 },
+      { name: 'Serie A', teams: 3 }
     ];
 
     const combobox = page.getByRole('combobox');
 
     for (const league of leagues) {
-      await combobox.selectOption([league]);
+      await combobox.selectOption([league.name]);
       
-      // Verify the dropdown shows the selected league and results are filtered
-      const teamsCountText = await page.locator('.filter-count').textContent();
-      expect(teamsCountText).toContain('team');
+      // Verify the results count shows correct number of teams
+      await expect(page.getByText(`${league.teams} team${league.teams > 1 ? 's' : ''}`)).toBeVisible();
       
-      // Verify at least one team is displayed with the correct league
-      await expect(page.getByText(`League: ${league}`).first()).toBeVisible();
+      // Verify the correct number of team headings are displayed
+      const teamHeadings = page.locator('main').getByRole('heading', { level: 3 });
+      await expect(teamHeadings).toHaveCount(league.teams);
     }
 
     // 3. Select 'All Leagues' option
