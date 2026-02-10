@@ -10,6 +10,10 @@ function App() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [scrolled, setScrolled] = useState(false)
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem('darkMode')
+    return saved ? JSON.parse(saved) : false
+  })
   const contentRef = useRef(null)
   
   // Filter states
@@ -39,6 +43,21 @@ function App() {
       return () => content.removeEventListener('scroll', handleScroll)
     }
   }, [])
+
+  useEffect(() => {
+    // Apply dark mode class to document
+    if (darkMode) {
+      document.documentElement.classList.add('dark-mode')
+    } else {
+      document.documentElement.classList.remove('dark-mode')
+    }
+    // Save preference
+    localStorage.setItem('darkMode', JSON.stringify(darkMode))
+  }, [darkMode])
+
+  const toggleDarkMode = () => {
+    setDarkMode(prev => !prev)
+  }
 
   const fetchData = async () => {
     try {
@@ -546,6 +565,14 @@ function App() {
             <div className="profile-image">IS</div>
             <h2>Inderjit Singh</h2>
             <p className="subtitle">Full-Stack Developer & Football Fanatic</p>
+            <button 
+              className="theme-toggle" 
+              onClick={toggleDarkMode}
+              aria-label="Toggle dark mode"
+              title={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+            >
+              {darkMode ? '☀️' : '🌙'}
+            </button>
           </div>
 
           <div className="about-text">
