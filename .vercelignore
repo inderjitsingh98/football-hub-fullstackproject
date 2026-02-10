@@ -1,0 +1,15 @@
+# Exclude from deployment
+node_modules
+.git
+*.log
+.DS_Store
+backend
+tests
+playwright-report
+test-results
+ReadMe Documentations
+specs
+*.md
+!VERCEL_DEPLOYMENT.md
+playwright.config.js
+.github

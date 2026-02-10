@@ -398,7 +398,7 @@ test('should navigate to players tab', async ({ page }) => {
 *"Currently, this is a read-only demo app, so security concerns are minimal. For production, I'd add: authentication with JWT tokens, rate limiting on the API, input validation and sanitization, HTTPS enforcement, and proper error handling that doesn't expose sensitive information."*
 
 ### "How long did this take?"
-*"The initial build took about [X hours/days], but I spent additional time refining the design and adding features based on feedback. The iterative process taught me a lot about making design decisions and prioritizing features."*
+*"The initial build took about a day with Github copilot prompting and agent use, but I spent additional time refining the design and adding features based on feedback. The iterative process taught me a lot about making design decisions and prioritizing features."*
 
 ### "What was the hardest part?"
 *"Honestly, the design. Getting the layout to feel both functional and visually appealing took several iterations. I studied Apple's design language and modern web trends to arrive at this clean, minimal approach."*
