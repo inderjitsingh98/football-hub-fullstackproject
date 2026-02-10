@@ -191,8 +191,58 @@ function App() {
 
   const positions = ['all', ...new Set(players.map(p => p.position))]
 
+  // Calculate cumulative player stats
+  const playerStats = {
+    totalPlayers: filteredPlayers.length,
+    totalGoals: filteredPlayers.reduce((sum, p) => sum + p.goals, 0),
+    totalAssists: filteredPlayers.reduce((sum, p) => sum + p.assists, 0),
+    totalAppearances: filteredPlayers.reduce((sum, p) => sum + p.appearances, 0),
+    averageAge: filteredPlayers.length > 0 
+      ? (filteredPlayers.reduce((sum, p) => sum + p.age, 0) / filteredPlayers.length).toFixed(1)
+      : 0
+  }
+
   const renderPlayers = () => (
     <>
+      {/* Cumulative Stats Tiles */}
+      <div className="stats-tiles" data-testid="player-stats-tiles">
+        <div className="stat-tile" style={{ animationDelay: '0s' }}>
+          <div className="stat-tile-icon">👥</div>
+          <div className="stat-tile-content">
+            <div className="stat-tile-label">Total Players</div>
+            <div className="stat-tile-value">{playerStats.totalPlayers}</div>
+          </div>
+        </div>
+        <div className="stat-tile" style={{ animationDelay: '0.1s' }}>
+          <div className="stat-tile-icon">⚽</div>
+          <div className="stat-tile-content">
+            <div className="stat-tile-label">Total Goals</div>
+            <div className="stat-tile-value">{playerStats.totalGoals.toLocaleString()}</div>
+          </div>
+        </div>
+        <div className="stat-tile" style={{ animationDelay: '0.2s' }}>
+          <div className="stat-tile-icon">🎯</div>
+          <div className="stat-tile-content">
+            <div className="stat-tile-label">Total Assists</div>
+            <div className="stat-tile-value">{playerStats.totalAssists.toLocaleString()}</div>
+          </div>
+        </div>
+        <div className="stat-tile" style={{ animationDelay: '0.3s' }}>
+          <div className="stat-tile-icon">📊</div>
+          <div className="stat-tile-content">
+            <div className="stat-tile-label">Total Appearances</div>
+            <div className="stat-tile-value">{playerStats.totalAppearances.toLocaleString()}</div>
+          </div>
+        </div>
+        <div className="stat-tile" style={{ animationDelay: '0.4s' }}>
+          <div className="stat-tile-icon">🎂</div>
+          <div className="stat-tile-content">
+            <div className="stat-tile-label">Average Age</div>
+            <div className="stat-tile-value">{playerStats.averageAge} yrs</div>
+          </div>
+        </div>
+      </div>
+
       <div className="filters-bar">
         <div className="filter-group">
           <label className="filter-label">⚽ Position</label>

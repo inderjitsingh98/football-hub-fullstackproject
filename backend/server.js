@@ -71,52 +71,52 @@ const teams = [
 // Players Data - World's Top Stars from All Leagues
 const players = [
   // Premier League
-  { id: 1, name: 'Erling Haaland', position: 'Forward', team: 'Manchester City', nationality: 'Norway', age: 25, goals: 32, assists: 6, appearances: 33, image: 'https://ui-avatars.com/api/?name=Erling+Haaland&size=200&background=6caddf&color=fff&bold=true' },
-  { id: 2, name: 'Mohamed Salah', position: 'Forward', team: 'Liverpool', nationality: 'Egypt', age: 33, goals: 24, assists: 12, appearances: 31, image: 'https://ui-avatars.com/api/?name=Mohamed+Salah&size=200&background=c8102e&color=fff&bold=true' },
-  { id: 3, name: 'Bukayo Saka', position: 'Winger', team: 'Arsenal', nationality: 'England', age: 24, goals: 18, assists: 14, appearances: 32, image: 'https://ui-avatars.com/api/?name=Bukayo+Saka&size=200&background=ef0107&color=fff&bold=true' },
-  { id: 4, name: 'Kevin De Bruyne', position: 'Midfielder', team: 'Manchester City', nationality: 'Belgium', age: 34, goals: 8, assists: 18, appearances: 28, image: 'https://ui-avatars.com/api/?name=Kevin+De+Bruyne&size=200&background=6caddf&color=fff&bold=true' },
-  { id: 5, name: 'Cole Palmer', position: 'Midfielder', team: 'Chelsea', nationality: 'England', age: 24, goals: 20, assists: 11, appearances: 30, image: 'https://ui-avatars.com/api/?name=Cole+Palmer&size=200&background=034694&color=fff&bold=true' },
+  { id: 1, name: 'Erling Haaland', position: 'Forward', team: 'Manchester City', nationality: 'Norway', age: 25, goals: 32, assists: 6, appearances: 33, image: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=300&h=300&fit=crop' },
+  { id: 2, name: 'Mohamed Salah', position: 'Forward', team: 'Liverpool', nationality: 'Egypt', age: 33, goals: 24, assists: 12, appearances: 31, image: 'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=300&h=300&fit=crop' },
+  { id: 3, name: 'Bukayo Saka', position: 'Winger', team: 'Arsenal', nationality: 'England', age: 24, goals: 18, assists: 14, appearances: 32, image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=300&fit=crop' },
+  { id: 4, name: 'Kevin De Bruyne', position: 'Midfielder', team: 'Manchester City', nationality: 'Belgium', age: 34, goals: 8, assists: 18, appearances: 28, image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=300&h=300&fit=crop' },
+  { id: 5, name: 'Cole Palmer', position: 'Midfielder', team: 'Chelsea', nationality: 'England', age: 24, goals: 20, assists: 11, appearances: 30, image: 'https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?w=300&h=300&fit=crop' },
   
   // La Liga
-  { id: 6, name: 'Kylian Mbappé', position: 'Forward', team: 'Real Madrid', nationality: 'France', age: 27, goals: 28, assists: 12, appearances: 35, image: 'https://ui-avatars.com/api/?name=Kylian+Mbappe&size=200&background=febe10&color=000&bold=true' },
-  { id: 7, name: 'Vinícius Júnior', position: 'Winger', team: 'Real Madrid', nationality: 'Brazil', age: 25, goals: 22, assists: 14, appearances: 34, image: 'https://ui-avatars.com/api/?name=Vinicius+Junior&size=200&background=febe10&color=000&bold=true' },
-  { id: 8, name: 'Robert Lewandowski', position: 'Forward', team: 'Barcelona', nationality: 'Poland', age: 37, goals: 26, assists: 7, appearances: 32, image: 'https://ui-avatars.com/api/?name=Robert+Lewandowski&size=200&background=a50044&color=004d98&bold=true' },
-  { id: 9, name: 'Jude Bellingham', position: 'Midfielder', team: 'Real Madrid', nationality: 'England', age: 22, goals: 19, assists: 10, appearances: 33, image: 'https://ui-avatars.com/api/?name=Jude+Bellingham&size=200&background=febe10&color=000&bold=true' },
-  { id: 10, name: 'Antoine Griezmann', position: 'Forward', team: 'Atlético Madrid', nationality: 'France', age: 34, goals: 16, assists: 13, appearances: 30, image: 'https://ui-avatars.com/api/?name=Antoine+Griezmann&size=200&background=cb3524&color=fff&bold=true' },
+  { id: 6, name: 'Kylian Mbappé', position: 'Forward', team: 'Real Madrid', nationality: 'France', age: 27, goals: 28, assists: 12, appearances: 35, image: 'https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?w=300&h=300&fit=crop' },
+  { id: 7, name: 'Vinícius Júnior', position: 'Winger', team: 'Real Madrid', nationality: 'Brazil', age: 25, goals: 22, assists: 14, appearances: 34, image: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=300&h=300&fit=crop' },
+  { id: 8, name: 'Robert Lewandowski', position: 'Forward', team: 'Barcelona', nationality: 'Poland', age: 37, goals: 26, assists: 7, appearances: 32, image: 'https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?w=300&h=300&fit=crop' },
+  { id: 9, name: 'Jude Bellingham', position: 'Midfielder', team: 'Real Madrid', nationality: 'England', age: 22, goals: 19, assists: 10, appearances: 33, image: 'https://images.unsplash.com/photo-1611977735580-6a3bfa4d5b08?w=300&h=300&fit=crop' },
+  { id: 10, name: 'Antoine Griezmann', position: 'Forward', team: 'Atlético Madrid', nationality: 'France', age: 34, goals: 16, assists: 13, appearances: 30, image: 'https://images.unsplash.com/photo-1589487391730-58f20eb2c308?w=300&h=300&fit=crop' },
   
   // Serie A
-  { id: 11, name: 'Lautaro Martínez', position: 'Forward', team: 'Inter Milan', nationality: 'Argentina', age: 28, goals: 23, assists: 8, appearances: 31, image: 'https://ui-avatars.com/api/?name=Lautaro+Martinez&size=200&background=010e80&color=fff&bold=true' },
-  { id: 12, name: 'Rafael Leão', position: 'Winger', team: 'AC Milan', nationality: 'Portugal', age: 26, goals: 17, assists: 11, appearances: 29, image: 'https://ui-avatars.com/api/?name=Rafael+Leao&size=200&background=fb090b&color=000&bold=true' },
-  { id: 13, name: 'Dušan Vlahović', position: 'Forward', team: 'Juventus', nationality: 'Serbia', age: 26, goals: 21, assists: 5, appearances: 32, image: 'https://ui-avatars.com/api/?name=Dusan+Vlahovic&size=200&background=000000&color=fff&bold=true' },
+  { id: 11, name: 'Lautaro Martínez', position: 'Forward', team: 'Inter Milan', nationality: 'Argentina', age: 28, goals: 23, assists: 8, appearances: 31, image: 'https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=300&h=300&fit=crop' },
+  { id: 12, name: 'Rafael Leão', position: 'Winger', team: 'AC Milan', nationality: 'Portugal', age: 26, goals: 17, assists: 11, appearances: 29, image: 'https://images.unsplash.com/photo-1568098644339-c336e01058c1?w=300&h=300&fit=crop' },
+  { id: 13, name: 'Dušan Vlahović', position: 'Forward', team: 'Juventus', nationality: 'Serbia', age: 26, goals: 21, assists: 5, appearances: 32, image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=300&fit=crop' },
   
   // Bundesliga
-  { id: 14, name: 'Harry Kane', position: 'Forward', team: 'Bayern Munich', nationality: 'England', age: 32, goals: 35, assists: 9, appearances: 34, image: 'https://ui-avatars.com/api/?name=Harry+Kane&size=200&background=dc052d&color=fff&bold=true' },
-  { id: 15, name: 'Jamal Musiala', position: 'Midfielder', team: 'Bayern Munich', nationality: 'Germany', age: 22, goals: 15, assists: 12, appearances: 30, image: 'https://ui-avatars.com/api/?name=Jamal+Musiala&size=200&background=dc052d&color=fff&bold=true' },
-  { id: 16, name: 'Serhou Guirassy', position: 'Forward', team: 'Borussia Dortmund', nationality: 'Guinea', age: 28, goals: 24, assists: 6, appearances: 28, image: 'https://ui-avatars.com/api/?name=Serhou+Guirassy&size=200&background=fde100&color=000&bold=true' },
+  { id: 14, name: 'Harry Kane', position: 'Forward', team: 'Bayern Munich', nationality: 'England', age: 32, goals: 35, assists: 9, appearances: 34, image: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?w=300&h=300&fit=crop' },
+  { id: 15, name: 'Jamal Musiala', position: 'Midfielder', team: 'Bayern Munich', nationality: 'Germany', age: 22, goals: 15, assists: 12, appearances: 30, image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=300&fit=crop' },
+  { id: 16, name: 'Serhou Guirassy', position: 'Forward', team: 'Borussia Dortmund', nationality: 'Guinea', age: 28, goals: 24, assists: 6, appearances: 28, image: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=300&h=300&fit=crop' },
   
   // Ligue 1
-  { id: 17, name: 'Bradley Barcola', position: 'Winger', team: 'Paris Saint-Germain', nationality: 'France', age: 22, goals: 16, assists: 9, appearances: 27, image: 'https://ui-avatars.com/api/?name=Bradley+Barcola&size=200&background=004170&color=fff&bold=true' },
-  { id: 18, name: 'Gonçalo Ramos', position: 'Forward', team: 'Paris Saint-Germain', nationality: 'Portugal', age: 24, goals: 19, assists: 7, appearances: 26, image: 'https://ui-avatars.com/api/?name=Goncalo+Ramos&size=200&background=004170&color=fff&bold=true' },
+  { id: 17, name: 'Bradley Barcola', position: 'Winger', team: 'Paris Saint-Germain', nationality: 'France', age: 22, goals: 16, assists: 9, appearances: 27, image: 'https://images.unsplash.com/photo-1541271696563-3be2f555fc4e?w=300&h=300&fit=crop' },
+  { id: 18, name: 'Gonçalo Ramos', position: 'Forward', team: 'Paris Saint-Germain', nationality: 'Portugal', age: 24, goals: 19, assists: 7, appearances: 26, image: 'https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?w=300&h=300&fit=crop' },
   
   // Saudi Pro League
-  { id: 19, name: 'Cristiano Ronaldo', position: 'Forward', team: 'Al Nassr', nationality: 'Portugal', age: 40, goals: 27, assists: 9, appearances: 32, image: 'https://ui-avatars.com/api/?name=Cristiano+Ronaldo&size=200&background=ffd230&color=0066cc&bold=true' },
-  { id: 20, name: 'Neymar Jr', position: 'Forward', team: 'Al Hilal', nationality: 'Brazil', age: 34, goals: 15, assists: 12, appearances: 24, image: 'https://ui-avatars.com/api/?name=Neymar+Jr&size=200&background=0066cc&color=fff&bold=true' },
-  { id: 21, name: 'Karim Benzema', position: 'Forward', team: 'Al Ittihad', nationality: 'France', age: 38, goals: 22, assists: 8, appearances: 29, image: 'https://ui-avatars.com/api/?name=Karim+Benzema&size=200&background=000000&color=ffd230&bold=true' },
+  { id: 19, name: 'Cristiano Ronaldo', position: 'Forward', team: 'Al Nassr', nationality: 'Portugal', age: 40, goals: 27, assists: 9, appearances: 32, image: 'https://images.unsplash.com/photo-1520110120835-c96534a4c984?w=300&h=300&fit=crop' },
+  { id: 20, name: 'Neymar Jr', position: 'Forward', team: 'Al Hilal', nationality: 'Brazil', age: 34, goals: 15, assists: 12, appearances: 24, image: 'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=300&h=300&fit=crop' },
+  { id: 21, name: 'Karim Benzema', position: 'Forward', team: 'Al Ittihad', nationality: 'France', age: 38, goals: 22, assists: 8, appearances: 29, image: 'https://images.unsplash.com/photo-1582142306909-195724d33d91?w=300&h=300&fit=crop' },
   
   // MLS
-  { id: 22, name: 'Lionel Messi', position: 'Forward', team: 'Inter Miami', nationality: 'Argentina', age: 38, goals: 25, assists: 16, appearances: 30, image: 'https://ui-avatars.com/api/?name=Lionel+Messi&size=200&background=f7b5cd&color=000&bold=true' },
-  { id: 23, name: 'Luis Suárez', position: 'Forward', team: 'Inter Miami', nationality: 'Uruguay', age: 39, goals: 18, assists: 10, appearances: 28, image: 'https://ui-avatars.com/api/?name=Luis+Suarez&size=200&background=f7b5cd&color=000&bold=true' },
-  { id: 24, name: 'Marco Reus', position: 'Midfielder', team: 'LA Galaxy', nationality: 'Germany', age: 36, goals: 12, assists: 14, appearances: 25, image: 'https://ui-avatars.com/api/?name=Marco+Reus&size=200&background=00245d&color=ffd200&bold=true' },
+  { id: 22, name: 'Lionel Messi', position: 'Forward', team: 'Inter Miami', nationality: 'Argentina', age: 38, goals: 25, assists: 16, appearances: 30, image: 'https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=300&h=300&fit=crop' },
+  { id: 23, name: 'Luis Suárez', position: 'Forward', team: 'Inter Miami', nationality: 'Uruguay', age: 39, goals: 18, assists: 10, appearances: 28, image: 'https://images.unsplash.com/photo-1569587112025-0d460e81a126?w=300&h=300&fit=crop' },
+  { id: 24, name: 'Marco Reus', position: 'Midfielder', team: 'LA Galaxy', nationality: 'Germany', age: 36, goals: 12, assists: 14, appearances: 25, image: 'https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=300&h=300&fit=crop' },
   
   // Eredivisie
-  { id: 25, name: 'Brian Brobbey', position: 'Forward', team: 'Ajax', nationality: 'Netherlands', age: 24, goals: 20, assists: 5, appearances: 27, image: 'https://ui-avatars.com/api/?name=Brian+Brobbey&size=200&background=d2122e&color=fff&bold=true' },
+  { id: 25, name: 'Brian Brobbey', position: 'Forward', team: 'Ajax', nationality: 'Netherlands', age: 24, goals: 20, assists: 5, appearances: 27, image: 'https://images.unsplash.com/photo-1554310603-d39d43033735?w=300&h=300&fit=crop' },
   
   // Primeira Liga
-  { id: 26, name: 'Viktor Gyökeres', position: 'Forward', team: 'Sporting CP', nationality: 'Sweden', age: 27, goals: 29, assists: 7, appearances: 31, image: 'https://ui-avatars.com/api/?name=Viktor+Gyokeres&size=200&background=006437&color=fff&bold=true' },
+  { id: 26, name: 'Viktor Gyökeres', position: 'Forward', team: 'Sporting CP', nationality: 'Sweden', age: 27, goals: 29, assists: 7, appearances: 31, image: 'https://images.unsplash.com/photo-1530884698386-d42ad3199b1f?w=300&h=300&fit=crop' },
   
   // Brasileirão
-  { id: 27, name: 'Pedro', position: 'Forward', team: 'Flamengo', nationality: 'Brazil', age: 27, goals: 23, assists: 6, appearances: 29, image: 'https://ui-avatars.com/api/?name=Pedro&size=200&background=e41a23&color=000&bold=true' },
-  { id: 28, name: 'Estêvão', position: 'Winger', team: 'Palmeiras', nationality: 'Brazil', age: 19, goals: 14, assists: 11, appearances: 26, image: 'https://ui-avatars.com/api/?name=Estevao&size=200&background=006437&color=fff&bold=true' }
+  { id: 27, name: 'Pedro', position: 'Forward', team: 'Flamengo', nationality: 'Brazil', age: 27, goals: 23, assists: 6, appearances: 29, image: 'https://images.unsplash.com/photo-1566577134770-3d85bb3a9cc4?w=300&h=300&fit=crop' },
+  { id: 28, name: 'Estêvão', position: 'Winger', team: 'Palmeiras', nationality: 'Brazil', age: 19, goals: 14, assists: 11, appearances: 26, image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=300&h=300&fit=crop' }
 ];
 
 // Matches Data - Across All Major Leagues
