@@ -92,6 +92,46 @@ function App() {
     return badges[teamName] || '⚽'
   }
 
+  // Get country flag emoji
+  const getCountryFlag = (nationality) => {
+    const flags = {
+      'Norway': '🇳🇴',
+      'Egypt': '🇪🇬',
+      'England': '🏴󠁧󠁢󠁥󠁮󠁧󠁿',
+      'Belgium': '🇧🇪',
+      'France': '🇫🇷',
+      'Brazil': '🇧🇷',
+      'Poland': '🇵🇱',
+      'Argentina': '🇦🇷',
+      'Portugal': '🇵🇹',
+      'Serbia': '🇷🇸',
+      'Germany': '🇩🇪',
+      'Guinea': '🇬🇳',
+      'Uruguay': '🇺🇾',
+      'Sweden': '🇸🇪',
+      'Spain': '🇪🇸',
+      'Croatia': '🇭🇷',
+      'South Korea': '🇰🇷',
+      'Netherlands': '🇳🇱',
+      'Canada': '🇨🇦',
+      'Nigeria': '🇳🇬',
+      'Georgia': '🇬🇪',
+      'Italy': '🇮🇹',
+      'Morocco': '🇲🇦',
+      'Senegal': '🇸🇳',
+      'Cameroon': '🇨🇲',
+      'Ghana': '🇬🇭',
+      'Ivory Coast': '🇨🇮',
+      'Colombia': '🇨🇴',
+      'Chile': '🇨🇱',
+      'Japan': '🇯🇵',
+      'Mexico': '🇲🇽',
+      'United States': '🇺🇸',
+      'Saudi Arabia': '🇸🇦'
+    }
+    return flags[nationality] || '🏴'
+  }
+
   // Filter teams
   const filteredTeams = teams.filter(team => {
     const matchesLeague = selectedLeague === 'all' || team.league === selectedLeague
@@ -295,7 +335,7 @@ function App() {
             </div>
             <div className="player-meta">
               <span>⚽ {player.team}</span>
-              <span>🏴 {player.nationality}</span>
+              <span>{getCountryFlag(player.nationality)} {player.nationality}</span>
               <span>🎂 {player.age} years</span>
             </div>
             <div className="player-stats">
