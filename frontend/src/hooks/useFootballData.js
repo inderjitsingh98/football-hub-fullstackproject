@@ -45,7 +45,8 @@ export const useFootballData = () => {
         setStandings(standingsData)
         setLeagues(leaguesData)
       } catch (err) {
-        setError('Failed to fetch data. Make sure the backend is running on port 3001.')
+        console.error('API fetch error:', err)
+        setError(`Failed to fetch data from API. ${err.message || 'Please try refreshing the page.'}`)
       } finally {
         setLoading(false)
       }
